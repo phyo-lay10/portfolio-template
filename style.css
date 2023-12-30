@@ -1,0 +1,434 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  text-decoration: none;
+}
+/* font down pi htae yan lo */
+
+/*Common*/
+
+.main-container {
+  background-color: whitesmoke;
+}
+
+h2,
+h3 {
+  color: white;
+}
+#aboutme,
+#skill,
+#work,
+#contactme,
+footer {
+  margin-top: 70px;
+}
+.container {
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+}
+.container:not(#header .container) {
+  padding: 10px;
+}
+.box-shadow {
+  box-shadow: 2px 2px 8px gray;
+}
+
+/*Nav CSS*/
+#nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: 0.5s;
+  box-shadow: 2px 2px 7px gainsboro;
+  /*  border: 2px solid red;*/
+
+  /*  margin-bottom: 1.5rem;*/
+}
+#nav.bg {
+  background-color: rgb(194, 194, 252);
+}
+#nav .container .navbar-brand {
+  padding: 10px;
+}
+#nav .container .navbar-brand a {
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#toggler-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: rgb(95, 95, 236);
+  color: white;
+  border-radius: 3px;
+  display: none;
+}
+#nav .container {
+  justify-content: space-between;
+}
+#nav .container .navbar-menu {
+  display: flex;
+  gap: 10px;
+}
+#nav .container .navbar-menu li {
+  padding: 10px;
+  font-weight: bold;
+}
+#nav .container .navbar-menu li a {
+  color: black;
+}
+#nav .container .navbar-menu li:hover a {
+  color: blue;
+  font-weight: bold;
+}
+
+/*Header CSS*/
+
+#header {
+  padding-top: 65px;
+  padding-bottom: 30px;
+}
+
+#header .container {
+  border: px solid black;
+  align-items: center;
+  margin: 10px auto;
+  background-color: rgb(95, 95, 236);
+  color: black;
+  border: 5px solid rgb(199, 199, 242);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+#header .container .content {
+  flex-basis: 60%;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 10px;
+}
+#header .container .content h4 {
+  letter-spacing: 5px;
+}
+#header .container .content h1,
+#header .container .content h4,
+#header .container .content p {
+  margin-bottom: 10px;
+}
+
+.icon a {
+  color: white;
+  margin-left: 15px;
+  font-size: 2em;
+}
+.icon a:first-child {
+  color: red;
+}
+.icon a:nth-child(2) {
+  color: rgb(206, 11, 43);
+}
+.icon a:last-child {
+  color: rgb(15, 15, 253);
+}
+#header .container .image-div {
+  flex-basis: 40%;
+}
+#header .container .image-div img {
+  width: 100%;
+  height: 350px;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+}
+
+/*About Me CSS*/
+
+#aboutme .container {
+  margin: 10px auto;
+  align-items: center;
+}
+#aboutme .content h2 {
+  line-height: 40px;
+  margin-bottom: 5px;
+  color: rgb(84, 84, 242);
+}
+/* #aboutme .content p {
+  color: white;
+} */
+#aboutme .content h2 span {
+  color: rgb(84, 84, 242);
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  /* color: white; */
+}
+#aboutme .container > div {
+  flex-basis: 50%;
+}
+#aboutme .container .image-div img {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+#aboutme .container .content {
+  flex-basis: 50%;
+}
+
+/*Skill CSS*/
+/* #skill {
+  margin-top: 70px;
+} */
+#skill .container {
+  align-items: center;
+}
+#skill .container > div {
+  /*	border: 2px solid black;*/
+  flex-basis: 50%;
+}
+#skill .container ul {
+  list-style-type: none;
+}
+#skill .container .title2,
+#skill .container .title3,
+#skill .container .title1 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: black;
+}
+#skill .container ul li {
+  /*	border: 2px solid green;*/
+  display: inline-block;
+  background-color: rgba(193, 183, 189, 0.6);
+  padding: 10px 20px;
+  margin: 5px 5px 5px 0;
+  border-radius: 5px;
+}
+#skill .container .image-div img {
+  width: 100%;
+  margin: auto;
+  display: block;
+  border-radius: 5px;
+}
+/*Work CSS*/
+
+#work .container .card {
+  /*	border: 2px solid black;*/
+  flex-basis: 30%;
+  background-color: rgb(181, 181, 252);
+  color: black;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.5s, background-color 0.5s;
+}
+#work .container {
+  justify-content: space-between;
+}
+#work .container .card:hover {
+  background-color: rgb(97, 97, 186);
+  /*	scale: 1.1;*/
+  transform: scale(1.03);
+  /*	transition: transform .5s;*/
+}
+#work .card h3 {
+  margin: 15px 0;
+  color: black;
+}
+/*Contact Section*/
+
+#contactme .container div {
+  /*	border: 2px solid black;*/
+  flex-basis: 50%;
+}
+#contactme ul {
+  list-style-type: none;
+  line-height: 40px;
+  font-weight: bold;
+  /* color: white; */
+}
+#contactme ul li i {
+  color: rgb(77, 77, 236);
+  font-size: 20px;
+  margin-right: 10px;
+}
+#contactme .container .form-gp {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#contactme .container input,
+#contactme .container textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+#contactme .container input {
+  flex-basis: 49%;
+  height: 50px;
+  border: none;
+}
+#contactme .container textarea {
+  width: 100%;
+  height: 100px;
+}
+#contactme .container button {
+  padding: 5px 30px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5px;
+  float: right;
+  background-color: rgb(77, 77, 236);
+  color: white;
+}
+
+/*Footer CSS*/
+footer {
+  background-color: rgb(77, 77, 236);
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+footer .container {
+  justify-content: space-between;
+}
+footer .container .col {
+  flex-basis: 33%;
+  line-height: 35px;
+  text-align: center;
+}
+footer .container .col li:hover a {
+  color: rgb(24, 24, 234);
+  font-weight: bold;
+}
+footer .container .col ul {
+  list-style-type: none;
+  color: white;
+}
+footer .container .col h3 {
+  margin-bottom: 20px;
+}
+footer .container .col ul a {
+  text-decoration: none;
+  color: white;
+}
+#top {
+  /*	background-color: darkblue;*/
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: rgb(195, 195, 201);
+  color: rgb(49, 49, 242);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+@media (max-width: 600px) {
+  /*  Nav Section*/
+  #nav .container {
+    flex-direction: column;
+    background-color: rgb(95, 95, 236);
+  }
+  #nav .container .navbar-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #toggler-btn {
+    display: block;
+  }
+  #nav .container .navbar-menu {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  #nav .container .navbar-menu.active {
+    height: 290px;
+  }
+
+  /*	Header Section*/
+  #header .container {
+    flex-direction: column-reverse;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0px 0px;
+  }
+  #header .content {
+    padding: 20px 0;
+  }
+  #header .content h1 {
+    line-height: 35px;
+  }
+  #header .container .image-div img {
+    height: 400px;
+  }
+  /*	About Me Section*/
+  #aboutme .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  #aboutme .content {
+    padding: 20px 0;
+  }
+
+  /*	Skill Section*/
+  #skill .container {
+    flex-direction: column-reverse;
+  }
+  #skill .content {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  /*	Work Section*/
+  #work .container {
+    flex-direction: column;
+  }
+  #work .container .card {
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  /*	Contact Me Section*/
+  #contactme .container {
+    flex-direction: column;
+  }
+  #contactme .container .form-gp {
+    flex-direction: column;
+  }
+  #contactme .container .form-gp input:first-child {
+    margin-bottom: 10px;
+  }
+  #contactme .container .form-gp input {
+    padding: 12px;
+  }
+  #contactme .container .form textarea {
+    height: 150px;
+  }
+
+  /*	Footer Section*/
+  footer .container {
+    flex-direction: column;
+  }
+  footer .col {
+    margin: 20px 0;
+  }
+  footer .container .col h3 {
+    margin-bottom: 10px;
+  }
+}

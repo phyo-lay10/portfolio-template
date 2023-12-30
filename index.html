@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<div class="main-container">
+
+		<!-- nav section -->
+		<nav id="nav">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="">Juli</a>
+					<button id="toggler-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+				</div>
+
+				<ul class="navbar-menu" id="navbar-menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#aboutme">About</a></li>
+					<li><a href="#skill">Skill</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#contactme">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<!-- Header Section -->
+		<header id="header">
+			<div class="container box-shadow">
+				<div class="content">
+					<h4>HELLO THERE</h4>
+					<h1>I'm Juli - Web Designer</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+					<div class="icon">
+						<a href=""><i class="fa-brands fa-youtube"></i></a>
+						<a href=""><i class="fa-brands fa-instagram"></i></a>
+						<a href=""><i class="fa-brands fa-facebook"></i></a>
+					</div>
+
+				</div>
+
+				<div class="image-div">
+					<img src="img/girl.jpg">
+				</div>
+			</div>
+		</header>
+
+		<!-- About Me Section -->
+		<section id="aboutme">
+			<h1 class="section-title">About Me</h1>
+			<div class="container">
+				<div class="image-div">
+					<img src="img/girl.jpg" class="box-shadow">
+				</div>
+
+				<div class="content">
+					<h2> <span>Juli</span></h2>
+					<h2>Web Designer</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skill Section -->
+		<section id="skill">
+			<h1 class="section-title">My Skill</h1>
+
+			<div class="container">
+				<div class="content">
+					<h3 class="title1">Front End</h3>
+					<ul>
+						<li>Html</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>jQuery</li>
+						<li>Bootstrap</li>
+						<li>VueJs</li>
+					</ul>
+
+					<h3 class="title2">Back End</h3>
+					<ul>
+						<li>Php</li>
+						<li>Java</li>
+						<li>Python</li>
+						<li>C#</li>
+						<li>NodeJs</li>
+						<li>MySQL</li>
+					</ul>
+
+					<h3 class="title3">UI UX Design & Others</h3>
+					<ul>
+						<li>AdobeXD</li>
+						<li>Figma</li>
+						<li>Photoshop</li>
+						<li>Illustrator</li>
+					</ul>
+				</div>
+
+				<div class="image-div">
+					<img src="img/wk.jpg" class="box-shadow">
+				</div>
+			</div>
+		</section>
+
+		<!-- Work Section -->
+		<section id="work">
+			<h1 class="section-title">My Work</h1>
+			<div class="container">
+				<div class="card box-shadow">
+					<div><i class="fa-brands fa-angular"></i></div>
+					<h3>Web Development</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+
+				<div class="card box-shadow">
+					<div><i class="fa-regular fa-globe"></i></div>
+					<h3>Web Design</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+
+				<div class="card box-shadow">
+					<div><i class="fa-regular fa-pen-to-square"></i></div>
+					<h3>Graphic Design</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+
+
+
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contactme">
+			<h1 class="section-title">Contact Me</h1>
+			<div class="container">
+				<div class="info">
+					<ul>
+						<li><i class="fa-solid fa-envelope"></i> juli@gmail.com</li>
+						<li> <i class="fa-solid fa-mobile-button"></i> 09109110420</li>
+						<li><i class="fa-sharp fa-solid fa-location-dot"></i> Yangon, Burma</li>
+					</ul>
+				</div>
+
+				<div class="form">
+					<form>
+						<div class="form-gp">
+							<input type="text" name="" placeholder="Name" class="box-shadow">
+							<input type="text" name="" placeholder="Email" class="box-shadow">
+						</div>
+						<textarea class="box-shadow" placeholder="Message ... "></textarea>
+						<button class="box-shadow">Send</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<footer>
+			<div class="container">
+				<div class="col">
+					<h3>The Quotes that Juli Likes</h3>
+					<ul>
+						<li>"The more u give, the more u receive"</li>
+						<li>"What you get is what you did"</li>
+						<li>"Learn from where you lose"</li>
+					</ul>
+				</div>
+
+				<div class="col">
+					<h3>Useful Links</h3>
+					<ul>
+						<li><a href="#header">Header</a></li>
+						<li><a href="#aboutme">About Me</a></li>
+						<li><a href="#skill">My Skill</a></li>
+						<li><a href="#work">My Work</a></li>
+						<li><a href="#contactme">Contact Me</a></li>
+					</ul>
+				</div>
+
+				<div class="col">
+					<h3>Follow me on</h3>
+					<div class="icon">
+						<a href=""><i class="fa-brands fa-youtube"></i></a>
+						<a href=""><i class="fa-brands fa-instagram"></i></a>
+						<a href=""><i class="fa-brands fa-facebook"></i></a>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+
+		<a href="#header" id="top">
+			<i class="fa-sharp fa-solid fa-arrow-up"></i>
+		</a>
+	</div>
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
